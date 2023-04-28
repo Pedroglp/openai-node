@@ -2221,7 +2221,7 @@ export declare const OpenAIApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    createTranscription(file: File, model: string, prompt?: string, responseFormat?: string, temperature?: number, language?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CreateTranscriptionResponse>>;
+    createTranscription(file: ReadStream, model: string, prompt?: string, responseFormat?: string, temperature?: number, language?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CreateTranscriptionResponse>>;
     /**
      *
      * @summary Translates audio into into English.
@@ -2233,7 +2233,7 @@ export declare const OpenAIApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    createTranslation(file: File, model: string, prompt?: string, responseFormat?: string, temperature?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CreateTranslationResponse>>;
+    createTranslation(file: ReadStream, model: string, prompt?: string, responseFormat?: string, temperature?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CreateTranslationResponse>>;
     /**
      *
      * @summary Delete a file.
